@@ -18,15 +18,18 @@ if (choice == 1) {
 choice	= JOptionPane.showOptionDialog(null, "I will ask you one question, and I will summon you back to your house if get the right answer, deal?", "?????", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, null, options2, options2[0]);
 
 	if (choice == 0) {
-		JOptionPane.showOptionDialog(null, "What is better? Gummy sharks or gummy worms?", "?????",JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, null, options, options[0]);
+		String[] options3 = {"Gummy sharks", "Gummy worms"};
+		JOptionPane.showOptionDialog(null, "What is better? Gummy sharks or gummy worms?", "?????",JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, null, options3, options3[0]);
 	}
-	if (choice == 1) {
+		if (choice == 1) {
 		JOptionPane.showMessageDialog(null, "I guess I have to eat you now... \n	You Died!");
+		
 	}
-	
+		if (choice == 0) {
+			JOptionPane.showMessageDialog(null, "You're free to go. *wshshhhhhh*");
 }
 
 
-
+}
 }
 }
